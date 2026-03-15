@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        registerReceiver(incrementBroadcastReceiver, IntentFilter("INCREMENT_VALUE_ACTION"), Context.RECEIVER_EXPORTED)
+        registerReceiver(incrementBroadcastReceiver, IntentFilter("INCREMENT_VALUE_ACTION"))
     }
 
     override fun onStop() {
